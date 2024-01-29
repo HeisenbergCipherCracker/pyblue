@@ -3,15 +3,16 @@ import subprocess
 import sys
 
 try:
-    import thirdparty.requests as requests
-
+    pass
 except:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    subprocess.check_call(["python3", "-m", "pip", "install", "requests"])
     import requests
 finally:
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
-    subprocess.check_call([sys.executable, "-m", "pip", "install", "scapy"])
+    subprocess.check_call(["python3", "-m", "pip", "install", "requests"])
+    subprocess.check_call(["python3", "-m", "pip", "install", "scapy"])
+    subprocess.check_call(["python3", "-m", "pip", "install", "urllib3"])
     from scapy.all import ARP, Ether, srp
+    import requests
 
 
 
