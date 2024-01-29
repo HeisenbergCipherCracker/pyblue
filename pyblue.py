@@ -12,7 +12,8 @@ except:
 finally:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
     subprocess.check_call([sys.executable, "-m", "pip", "install", "scapy"])
-    import scapy
+    from scapy.all import ARP, Ether, srp
+
 
 
 
