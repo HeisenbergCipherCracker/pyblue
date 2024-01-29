@@ -1,4 +1,3 @@
-from thirdparty.scapy.all import ARP, Ether, srp
 import socket
 import subprocess
 import sys
