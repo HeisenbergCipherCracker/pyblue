@@ -9,6 +9,11 @@ try:
 except:
     subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
     import requests
+finally:
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "requests"])
+    subprocess.check_call([sys.executable, "-m", "pip", "install", "scapy"])
+    import scapy
+
 
 
 
